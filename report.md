@@ -21,14 +21,15 @@ WeightedEnsemble_L3
         - hour of day
 
 ### How much better did your model preform after adding additional features and why do you think that is?
-TODO: Add your explanation
+- RMSE dropped from 1.39249 to 0.47491, which is a 66% improvement. 
+- Because by adding those new features, the model is able to utilize the information previously buried under datetime variable and make more accurate predictions.
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-TODO: Add your explanation
+After trying different hyperparameters (time, num_stack_levels, num_bag_folds), my model didn't perform better. 
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
-TODO: Add your explanation
+I would probably spend more time tuning time_limit/num_stack_levels/num_bag_folds.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|hpo1|hpo2|hpo3|score|
@@ -38,8 +39,6 @@ TODO: Add your explanation
 |hpo|?|?|?|?|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
-
-TODO: Replace the image below with your own.
 
 ![model_train_score.png](img/model_train_score.png)
 
