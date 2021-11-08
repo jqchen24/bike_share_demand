@@ -44,8 +44,6 @@ I would probably spend more time tuning time_limit/num_stack_levels/num_bag_fold
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-TODO: Replace the image below with your own.
-
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
