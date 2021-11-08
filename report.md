@@ -1,16 +1,24 @@
 # Report: Predict Bike Sharing Demand with AutoGluon Solution
-#### NAME HERE
+#### Junqi Chen
 
 ## Initial Training
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
-TODO: Add your explanation
+Kaggle will reject the submission if we don't set everything to be > 0. Therefore, I manually set the negative values to zero. 
 
 ### What was the top ranked model that performed?
-TODO: Add your explanation
+WeightedEnsemble_L3 
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
-TODO: Add your explanation
+- Got a better understanding of the features
+    - Binary variables: holiday, workingday
+    - Variable approx normally distributed: temp, atemp
+    - Right skewed variables: windspeed, causal, registered, count
+- datetime variable could be informative because hypothetically day of the week and time of the day are factors that could impact bike sharing demand.
+    - Therefore, I extracted the following variables from datetime:
+        - Month
+        - Day of week
+        - hour of day
 
 ### How much better did your model preform after adding additional features and why do you think that is?
 TODO: Add your explanation
