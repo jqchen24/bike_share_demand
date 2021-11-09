@@ -36,7 +36,7 @@ I would probably spend more time tuning time_limit/num_stack_levels/num_bag_fold
 |--|--|--|--|--|
 |initial|600|NaN|NaN|1.39249|
 |add_features|600|NaN|NaN|0.47491|
-|hpo|1500|5.0|2.0|0.48006|
+|hpo|1500|5.0|2.0|47704|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
@@ -47,4 +47,11 @@ I would probably spend more time tuning time_limit/num_stack_levels/num_bag_fold
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-TODO: Add your explanation
+
+In this project, we leveraged AutoML framework AutoGluon to build ML models that predict bike sharing demand. 
+
+- First of all, AutoGluon models were built using the original features with default hyperparameters. The performance was not so great.
+
+- Second, feature engineering was done by deriving some new features, which helped the model performance quite a lot.
+
+- Finally, hyperparameter optimization was performed in an attempt to improve model performance. However, it didn't turn out to be successful due to the time constraint. 
