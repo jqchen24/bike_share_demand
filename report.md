@@ -36,7 +36,7 @@ I would probably spend more time tuning time_limit/num_stack_levels/num_bag_fold
 |--|--|--|--|--|
 |initial|600|NaN|NaN|1.39249|
 |add_features|600|NaN|NaN|0.47491|
-|hpo|1500|5.0|2.0|47704|
+|hpo|1500|5.0|2.0|0.47704|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
